@@ -1,0 +1,153 @@
+/* ==========================================
+   Global Styles
+========================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    color: #333;
+}
+
+
+/* ==========================================
+   Header
+========================================== */
+
+header {
+    background-color: #f8e8ee;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #f1d4df;
+}
+
+header h1 {
+    margin: 0;
+    color: #444;
+}
+
+
+/* ==========================================
+   Main Content
+========================================== */
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+
+/* ==========================================
+   Search Section
+========================================== */
+
+#search-section {
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.search-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-row label {
+    width: 120px;
+    font-weight: bold;
+}
+
+
+/* ==========================================
+   Form Section
+========================================== */
+
+#form-section {
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.form-row label {
+    width: 120px;
+    font-weight: bold;
+}
+
+
+/* ==========================================
+   Inputs & Textarea
+========================================== */
+
+input[type="text"],
+input[type="search"],
+textarea {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+input[type="file"] {
+    flex: 1;
+}
+
+
+/* ==========================================
+   Button
+========================================== */
+
+button {
+    padding: 10px 20px;
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d81b60;
+}
+
+
+/* ==========================================
+   Board Grid
+========================================== */
+
+#board-grid {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    min-height: 200px;
+}
+
+#board-grid h2 {
+    margin-top: 0;
+}
