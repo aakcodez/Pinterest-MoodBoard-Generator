@@ -1,6 +1,6 @@
 /* ==========================================
    Global Styles
-========================================== */
+   ========================================== */
 
 * {
     box-sizing: border-box;
@@ -14,10 +14,9 @@ body {
     color: #333;
 }
 
-
 /* ==========================================
    Header
-========================================== */
+   ========================================== */
 
 header {
     background-color: #f8e8ee;
@@ -31,10 +30,9 @@ header h1 {
     color: #444;
 }
 
-
 /* ==========================================
    Main Content
-========================================== */
+   ========================================== */
 
 main {
     max-width: 900px;
@@ -42,10 +40,9 @@ main {
     padding: 20px;
 }
 
-
 /* ==========================================
    Search Section
-========================================== */
+   ========================================== */
 
 #search-section {
     padding: 20px;
@@ -66,10 +63,9 @@ main {
     font-weight: bold;
 }
 
-
 /* ==========================================
    Form Section
-========================================== */
+   ========================================== */
 
 #form-section {
     padding: 20px;
@@ -91,10 +87,9 @@ main {
     font-weight: bold;
 }
 
-
 /* ==========================================
    Inputs & Textarea
-========================================== */
+   ========================================== */
 
 input[type="text"],
 input[type="search"],
@@ -115,10 +110,9 @@ input[type="file"] {
     flex: 1;
 }
 
-
 /* ==========================================
    Button
-========================================== */
+   ========================================== */
 
 button {
     padding: 10px 20px;
@@ -135,19 +129,71 @@ button:hover {
     background-color: #d81b60;
 }
 
-
 /* ==========================================
    Board Grid
-========================================== */
+   ========================================== */
 
 #board-grid {
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #ffffff;
-    min-height: 200px;
+    width: 90%;
+    max-width: 1400px;
+    margin: 50px auto;
+
+    column-count: 3;
+    column-gap: 24px;
 }
 
-#board-grid h2 {
-    margin-top: 0;
+/* ==========================================
+   Board Card
+   ========================================== */
+
+.board-card {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 24px;
+
+    break-inside: avoid;
+
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ==========================================
+   Board Image
+   ========================================== */
+
+.board-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* ==========================================
+   Board Information
+   ========================================== */
+
+.board-card h3 {
+    margin: 16px 16px 8px;
+}
+
+.board-card p {
+    margin: 0 16px 18px;
+}
+
+/* ==========================================
+   Responsive Masonry Layout
+   ========================================== */
+
+@media (max-width: 900px) {
+    #board-grid {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 600px) {
+    #board-grid {
+        column-count: 1;
+    }
 }

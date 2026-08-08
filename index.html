@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Pinterest Mood Board Generator</title>
 
     <link rel="stylesheet" href="style.css">
@@ -20,12 +21,17 @@
         <section id="search-section">
             <h2>Search Boards</h2>
 
-            <label for="search-input">Search Board:</label>
+            <label for="search-input">
+                Search Board:
+            </label>
+
             <input
                 type="search"
                 id="search-input"
-                placeholder="Type to search...">
+                placeholder="Type to search..."
+            >
         </section>
+
 
         <section id="form-section">
 
@@ -34,27 +40,48 @@
             <form id="mood-board-form">
 
                 <div class="form-row">
-                    <label for="image-upload">Upload Image:</label>
+
+                    <label for="image-upload">
+                        Upload Image:
+                    </label>
+
                     <input
                         type="file"
                         id="image-upload"
-                        accept="image/*">
+                        accept="image/*"
+                    >
+
                 </div>
 
+
                 <div class="form-row">
-                    <label for="board-title">Title:</label>
+
+                    <label for="board-title">
+                        Title:
+                    </label>
+
                     <input
                         type="text"
                         id="board-title"
-                        placeholder="Enter title">
+                        placeholder="Enter title"
+                    >
+
                 </div>
 
+
                 <div class="form-row">
-                    <label for="board-caption">Caption:</label>
+
+                    <label for="board-caption">
+                        Caption:
+                    </label>
+
                     <textarea
                         id="board-caption"
-                        placeholder="Write a longer caption here..."></textarea>
+                        placeholder="Write a longer caption here..."
+                    ></textarea>
+
                 </div>
+
 
                 <button type="submit">
                     Add to Board
@@ -64,19 +91,22 @@
 
         </section>
 
-        <section id="board-grid">
 
-            <h2>Your Mood Boards</h2>
+        <section id="boards-section">
 
-            <!-- Mood board cards will be generated dynamically using JavaScript -->
+            <h2>Your Visual Stories</h2>
+
+            <div id="board-grid">
+                <!-- Mood board cards will be generated dynamically -->
+            </div>
 
         </section>
 
     </main>
+
 
     <script src="script.js"></script>
 
 </body>
 
 </html>
-
